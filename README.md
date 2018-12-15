@@ -31,3 +31,11 @@ The setup I use is meant to provide a solution that works with plugins used for 
 When using the versions plugin it's important to process all modules, as the `bom` module would be skipped otherwise as there is no parent-child relation.
 
     mvn versions:set -DnewVersion=1.1-SNAPSHOT -DprocessAllModules=true
+    
+### Release plugin
+
+When using the [maven-release-plugin](https://maven.apache.org/maven-release/maven-release-plugin/index.html) we also want the `bom` versions to be rolled correctly, which works because we added it to the `modules` section of the aggregator.
+
+    mvn release:prepare -DdryRun=true -B
+
+Run a `release:prepare` in dry run and check the generated pom files for the next and tag version.
