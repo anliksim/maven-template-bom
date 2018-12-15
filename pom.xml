@@ -66,4 +66,29 @@
         </pluginManagement>
     </build>
 
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Simon Anliker</name>
+            <url>https://anlikers.ch</url>
+            <timezone>+1</timezone>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/anliksim/maven-template-bom</url>
+        <connection>scm:git:git@github.com:anliksim/maven-template-bom.git</connection>
+        <developerConnection>scm:git:git@github.com:anliksim/maven-template-bom.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
 </project>
