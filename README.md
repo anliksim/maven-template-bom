@@ -6,13 +6,14 @@ Template/example for multi-module maven projects that use and provide a bill of 
 
     maven-template-bom
     ├── bom
+    │   └── pom.xml (no parent)
     ├── module1
     │   ├── pom.xml
     │   └── src
     ├── module2
     │   ├── pom.xml
     │   └── src
-    ├── pom.xml
+    ├── pom.xml (aggegator)
 
 
 The structure is simple. Every submodule is part of the aggregator, however, the `bom` module does (and must not) use a parent.
