@@ -13,19 +13,28 @@
 
     <name>Project Bill of Materials</name>
 
+    <!--
+        Versions will be rolled automatically when using the maven-release plugin
+        or versions-maven-plugin when processing all submodules. Use explicit versions
+        instead of ${project.version} so they are reflected in the released pom file.
+    -->
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>anliksim</groupId>
                 <artifactId>module1</artifactId>
-                <version>${project.version}</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>anliksim</groupId>
                 <artifactId>module2</artifactId>
-                <version>${project.version}</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <!--
+        You'll need some more sections here as they're not inherited from the parent e.g. distributionManagement
+    -->
 
 </project>
