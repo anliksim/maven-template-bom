@@ -29,7 +29,7 @@ The setup I use is meant to provide a solution that works with plugins used for 
 
 #### Versions plugin
 
-When using the versions plugin it's important to process all modules, as the `bom` module would be skipped otherwise as there is no parent-child relation.
+When using the versions plugin it's important to process all modules, as the `bom` module would be skipped otherwise as there is no parent-child relation. Please note this option is only available from version 2.5.
 
     mvn versions:set -DnewVersion=1.1-SNAPSHOT -DprocessAllModules=true
     
