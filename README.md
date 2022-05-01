@@ -13,7 +13,7 @@ Template/example for multi-module maven projects that use and provide a bill of 
     ├── module2
     │   ├── pom.xml
     │   └── src
-    ├── pom.xml (aggegator)
+    ├── pom.xml (aggregator)
 
 
 The structure is simple. Every submodule is part of the aggregator, however, the `bom` module does (and must not) use a parent.
